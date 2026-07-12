@@ -16,10 +16,9 @@ LangChain provides a unified interface to interact with different types of langu
 
 | Concept | Description |
 |---|---|
-| LLMs | Basic text completion models |
-| Chat Models | Conversational models with message-based input (Human/AI/System) |
-| Open-Source Models | Running models locally or via free-tier APIs (e.g. HuggingFace, Ollama) |
-| Embedding Models | Converting text into vector representations |
+| LLMs | Basic text completion models (Hugging Face) |
+| Chat Models | Conversational models across multiple providers — Hugging Face (API & local), OpenAI, Anthropic, Google |
+| Embedding Models | Local embeddings, OpenAI embeddings, document similarity, and a simple document RAG example |
 
 ## 🛠️ Tech Stack
 - Python 3.x
@@ -29,15 +28,21 @@ LangChain provides a unified interface to interact with different types of langu
 
 ## 📂 Folder Structure
 ```
-LANGCHAIN_MODELS/
+Models/
 ├── 1.LLM/
+│   └── 1.HF_LLM.py
 ├── 2.ChatModels/
 │   ├── 1.chatmodel_hf_api.py
-│   └── 2.chatmodel_hf_local.py
+│   ├── 2.chatmodel_hf_local.py
+│   ├── 3.chatmodel_openai.py
+│   ├── 4.chatmodel_anthropic.py
+│   └── 5.chatmodel_google.py
 ├── 3.EmbeddedModels/
 │   ├── 1.Embedding.local.py
 │   ├── 2.document_similarity.py
-│   └── 3.document_RAG.py
+│   ├── 3.document_RAG.py
+│   ├── 4.embedding_openai_query.py
+│   └── 5.embedding_openai_docs.py
 ├── test.py
 ├── requirements.txt
 ├── .env              # not pushed (see .gitignore)
@@ -61,6 +66,7 @@ Create a `.env` file in this folder:
 ```
 OPENAI_API_KEY=your_key_here
 GOOGLE_API_KEY=your_key_here
+ANTHROPIC_API_KEY=your_key_here
 HUGGINGFACEHUB_API_TOKEN=your_key_here
 ```
 

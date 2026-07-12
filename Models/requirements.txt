@@ -3,6 +3,7 @@ langchain-core
 langchain-community
 langchain-openai
 langchain-google-genai
+langchain-anthropic
 langchain-huggingface
 python-dotenv
 sentence-transformers
