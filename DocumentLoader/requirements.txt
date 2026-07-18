@@ -1,0 +1,7 @@
+langchain
+langchain-community
+langchain-core
+langchain-huggingface
+pypdf
+beautifulsoup4
+python-dotenv
