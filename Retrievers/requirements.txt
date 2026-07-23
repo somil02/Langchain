@@ -1,0 +1,7 @@
+langchain
+langchain-community
+langchain-huggingface
+chromadb
+faiss-cpu
+python-dotenv
+jupyter
