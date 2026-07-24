@@ -1,0 +1,7 @@
+langchain
+langchain-community
+langchain-huggingface
+youtube-transcript-api
+chromadb
+python-dotenv
+jupyter
